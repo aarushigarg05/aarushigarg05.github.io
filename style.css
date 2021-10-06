@@ -313,9 +313,9 @@ section#timeline {
 	left: 50%;
 	top: 0;
 	margin: 0 0 0 -1px;
-	width: 2px;
+	width: 5px;
 	height: 100%;
-	background: rgba(255,255,255,0.2);
+	background: black;
   }
   section#timeline article {
 	width: 100%;
@@ -387,8 +387,8 @@ section#timeline {
 	padding: 15px;
 	margin: 0;
 	font-size: 14px;
-	background: #fff;
-	color: #656565;
+	background: black;
+	color: white;
 	border-radius: 0 0 6px 6px;
   }
   section#timeline article:nth-child(2n+2) div.inner {
@@ -453,7 +453,7 @@ section#timeline {
 }
 
 .skills .img img{
-	width: 100%;
+	width: 138%;
 	display: block;
 }
 
@@ -471,12 +471,13 @@ section#timeline {
 	margin-bottom: 30px;
 }
 
-.skills .skills-content .skill-box h6{
+.skills .skills-content .skill-box h5{
 	font-size: 16px;
 	font-weight: 500;
 	color: #000000;
 	margin:0 0 8px; 
 }
+
 
 .skills .skills-content .skill-box .skill-bar{
 	height:5px;
@@ -491,6 +492,9 @@ section#timeline {
 	top: 0;
 	height: 100%;
 
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in:hover{
+	background-color:rgb(150, 150, 173);
 }
 .skills .skills-content .skill-box .skill-bar .skill-bar-in span{
 	color: #838383;
@@ -659,17 +663,6 @@ section#timeline {
 	overflow: hidden;
 }
 
-/* section {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
-  height: 60vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-} */
-
 
 /* Footer left */
 
@@ -703,6 +696,9 @@ section#timeline {
 	text-decoration: none;
 	color:  inherit;
 }
+.footer-distributed .footer-links a:hover{
+	
+}
 
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
@@ -734,6 +730,9 @@ section#timeline {
 	margin-bottom: 5px;
 }
 
+.footer-distributed .footer-icons a:hover{
+	background-color: black;
+}
 /* Footer Right */
 
 .footer-distributed .footer-right{
@@ -868,12 +867,22 @@ section#timeline {
 	font-size: 2.5rem;
 	margin-bottom: 2%;
   }
-  .main h3 .underline--magical {
-	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  .main h3 .my-hover{
 	background-repeat: no-repeat;
 	background-size: 100% 0.2em;
 	background-position: 0 88%;
-	transition: background-size 0.25s ease-in;
+	text-decoration: underline;
+
+  }
+  .main h3 .my-hover:hover {
+	background: greenyellow;
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	text-decoration: underline;
+	background-position: 0 88%;
+	transition: background-size 0.5s ease-in;
+	font-size: larger;
+	font-weight: bold;
   }
   .main h3 .underline--magical:hover {
 	background-size: 100% 88%;
@@ -901,7 +910,7 @@ section#timeline {
   }
   .main #projects .project-tile:hover {
 	transform: scale(1.03);
-	background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background: greenyellow;
 	color: #212529;
 	box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.2);
   }
