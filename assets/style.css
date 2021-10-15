@@ -59,6 +59,7 @@ canvas{
 
 .home .full-screen{
 	min-height: 100vh;
+	min-width: 100vw;
 }
 
 .home .home-content{
