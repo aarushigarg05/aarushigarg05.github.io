@@ -881,9 +881,6 @@ section#timeline {
 	transition: all .5s ease;
   }
   .main h3 .my-hover:hover {
-	background: greenyellow;
-	background-repeat: no-repeat;
-	background-size: 100% 0.2em;
 	text-decoration: underline;
 	background-position: 0 88%;
 	transition: background-size 0.5s ease;
